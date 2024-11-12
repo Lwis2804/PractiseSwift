@@ -8,12 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var myButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        myButton.setTitle("Mi nuevo boton", for: .normal)
+        myButton.backgroundColor = .blue
+        myButton.setTitleColor(.white, for: .normal)
     }
 
-
+    @IBAction func myButtonAction(_ sender: Any) {
+        
+        if myButton.backgroundColor == .blue {
+            myButton.backgroundColor = .red
+        } else {
+            myButton.backgroundColor = .blue
+        }
+    }
+    
 }
 
