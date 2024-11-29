@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     
     // variables
-    private let myPickerViewValues = ["Uno","Dos"]
+    private let myPickerViewValues = ["Uno","Dos","Tres","Cuatro","Cinco"]
     
     
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         //pickers
         myPickerView.backgroundColor = .lightGray
-        myPickerView.dataSource = self // ayuda a cargar datos
+        myPickerView.dataSource = self // ayuda a cargar datos en la vista
         myPickerView.delegate = self // delegado sobre el view controller
     }
 
@@ -50,7 +50,17 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        return myPickerViewValues.count
+    }
+    
+    private func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> String? {
+        return myPickerViewValues[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let myString = myPickerViewValues[row]
+        myButton.setTitle(myString, for: .normal)
+
     }
     
     
