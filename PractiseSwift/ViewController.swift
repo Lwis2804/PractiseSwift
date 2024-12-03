@@ -46,6 +46,14 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func myPageControlAction(_ sender: Any) {
+        myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
+    }
+    
+    
+    
+    
 }
 
 
@@ -66,6 +74,7 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let myString = myPickerViewValues[row]
         myButton.setTitle(myString, for: .normal)
+        myPageControl.currentPage = row
 
     }
     
