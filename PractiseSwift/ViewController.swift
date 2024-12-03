@@ -53,7 +53,7 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         return myPickerViewValues.count
     }
     
-    private func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return myPickerViewValues[row]
     }
     
