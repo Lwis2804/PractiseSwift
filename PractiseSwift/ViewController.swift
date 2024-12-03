@@ -49,6 +49,8 @@ class ViewController: UIViewController {
     
     @IBAction func myPageControlAction(_ sender: Any) {
         myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
+        let myString = myPickerViewValues[myPageControl.currentPage]
+        myButton.setTitle(myString, for: .normal)
     }
     
     
