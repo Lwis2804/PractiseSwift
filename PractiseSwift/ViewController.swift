@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
 
+    @IBOutlet weak var myPageControl: UIPageControl!
     
     // variables
     private let myPickerViewValues = ["Uno","Dos","Tres","Cuatro","Cinco"]
@@ -29,6 +30,11 @@ class ViewController: UIViewController {
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self // ayuda a cargar datos en la vista
         myPickerView.delegate = self // delegado sobre el view controller
+        
+        // page controls
+        myPageControl.numberOfPages = myPickerViewValues.count
+        myPageControl.currentPageIndicatorTintColor = .blue
+        myPageControl.pageIndicatorTintColor = .lightGray
     }
 
     @IBAction func myButtonAction(_ sender: Any) {

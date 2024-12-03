@@ -31,20 +31,27 @@
                                     <constraint firstAttribute="height" constant="120" id="NdT-b1-xhn"/>
                                 </constraints>
                             </pickerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hxV-Zn-Wz4">
+                                <rect key="frame" x="20" y="294" width="353" height="26"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zgp-Sz-mcq" secondAttribute="trailing" constant="20" id="HZp-hs-DNr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p7w-dE-wCQ" secondAttribute="trailing" id="Nse-eB-tsb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxV-Zn-Wz4" secondAttribute="trailing" constant="20" id="TTy-sX-DA2"/>
                             <constraint firstItem="zgp-Sz-mcq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="W85-zV-UjR"/>
                             <constraint firstItem="zgp-Sz-mcq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dyw-fQ-mqo"/>
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcR-w9-5bo"/>
+                            <constraint firstItem="hxV-Zn-Wz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hrf-S1-mpc"/>
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="top" secondItem="zgp-Sz-mcq" secondAttribute="bottom" constant="20" id="vhZ-gx-BRa"/>
+                            <constraint firstItem="hxV-Zn-Wz4" firstAttribute="top" secondItem="p7w-dE-wCQ" secondAttribute="bottom" constant="20" id="zj2-I8-ZKA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="zgp-Sz-mcq" id="Yr6-UT-W91"/>
+                        <outlet property="myPageControl" destination="hxV-Zn-Wz4" id="zuS-Jc-9Qa"/>
                         <outlet property="myPickerView" destination="p7w-dE-wCQ" id="UiR-U1-7SE"/>
                     </connections>
                 </viewController>
