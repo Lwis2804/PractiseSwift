@@ -38,7 +38,7 @@
                                 </connections>
                             </pageControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dMT-06-elM">
-                                <rect key="frame" x="20" y="340" width="353" height="32"/>
+                                <rect key="frame" x="20" y="339" width="353" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -66,6 +66,7 @@
                         <outlet property="myButton" destination="zgp-Sz-mcq" id="Yr6-UT-W91"/>
                         <outlet property="myPageControl" destination="hxV-Zn-Wz4" id="zuS-Jc-9Qa"/>
                         <outlet property="myPickerView" destination="p7w-dE-wCQ" id="UiR-U1-7SE"/>
+                        <outlet property="mySegmentedControl" destination="dMT-06-elM" id="atl-XV-Bpt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -11,8 +11,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
-
     @IBOutlet weak var myPageControl: UIPageControl!
+    @IBOutlet weak var mySegmentedControl: UISegmentedControl!
+    
     
     // variables
     private let myPickerViewValues = ["Uno","Dos","Tres","Cuatro","Cinco"]
@@ -35,6 +36,14 @@ class ViewController: UIViewController {
         myPageControl.numberOfPages = myPickerViewValues.count
         myPageControl.currentPageIndicatorTintColor = .blue
         myPageControl.pageIndicatorTintColor = .lightGray
+        
+        // segmented control
+        
+        for (index, value) in myPickerViewValues.enumerated(){
+            mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
+        }
+       
+        
     }
 
     @IBAction func myButtonAction(_ sender: Any) {
