@@ -38,11 +38,14 @@
                                 </connections>
                             </pageControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dMT-06-elM">
-                                <rect key="frame" x="20" y="339" width="353" height="32"/>
+                                <rect key="frame" x="20" y="340" width="353" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Dy-AW-EjJ"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

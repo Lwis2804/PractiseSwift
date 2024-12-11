@@ -63,6 +63,9 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func mySegmentedControlAction(_ sender: Any) {
+        myPickerView.selectRow(mySegmentedControl.selectedSegmentIndex, inComponent: 0, animated: true)
+    }
     
     
 }
