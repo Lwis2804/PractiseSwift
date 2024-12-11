@@ -57,14 +57,23 @@ class ViewController: UIViewController {
     
     
     @IBAction func myPageControlAction(_ sender: Any) {
+        
+        
         myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
         let myString = myPickerViewValues[myPageControl.currentPage]
         myButton.setTitle(myString, for: .normal)
+        
+        mySegmentedControl.selectedSegmentIndex = myPageControl.currentPage
     }
     
     
     @IBAction func mySegmentedControlAction(_ sender: Any) {
         myPickerView.selectRow(mySegmentedControl.selectedSegmentIndex, inComponent: 0, animated: true)
+        
+        let myString = myPickerViewValues[mySegmentedControl.selectedSegmentIndex]
+        myButton.setTitle(myString, for: .normal)
+        
+        myPageControl.currentPage = mySegmentedControl.selectedSegmentIndex
     }
     
     
@@ -89,6 +98,7 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         let myString = myPickerViewValues[row]
         myButton.setTitle(myString, for: .normal)
         myPageControl.currentPage = row
+        mySegmentedControl.selectedSegmentIndex = row
 
     }
     
