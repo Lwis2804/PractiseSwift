@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         myPageControl.pageIndicatorTintColor = .lightGray
         
         // segmented control
-        
+        mySegmentedControl.removeAllSegments()
         for (index, value) in myPickerViewValues.enumerated(){
             mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
         }
