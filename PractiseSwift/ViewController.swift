@@ -54,18 +54,28 @@ class ViewController: UIViewController {
     
     
     @IBAction func mySliderAction(_ sender: Any) {
+       
         switch mySlider.value {
         case 1..<2:
             mySegmentedControl.selectedSegmentIndex = 0
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
+            myButton.setTitle(String(mySlider.value), for: .normal)
         case 2..<3:
             mySegmentedControl.selectedSegmentIndex = 1
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
+            myButton.setTitle(String(mySlider.value), for: .normal)
         case 3..<4:
             mySegmentedControl.selectedSegmentIndex = 2
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
+            myButton.setTitle(String(mySlider.value), for: .normal)
         case 4..<5:
             mySegmentedControl.selectedSegmentIndex = 3
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
+            myButton.setTitle(String(mySlider.value), for: .normal)
         default:
             mySegmentedControl.selectedSegmentIndex = 4
-            
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
+            myButton.setTitle(String(mySlider.value), for: .normal)
         }
     }
     
@@ -89,6 +99,7 @@ class ViewController: UIViewController {
         myButton.setTitle(myString, for: .normal)
         
         mySegmentedControl.selectedSegmentIndex = myPageControl.currentPage
+        mySlider.value = Float(myPageControl.currentPage)
     }
     
     
@@ -99,6 +110,7 @@ class ViewController: UIViewController {
         myButton.setTitle(myString, for: .normal)
         
         myPageControl.currentPage = mySegmentedControl.selectedSegmentIndex
+        mySlider.value = Float(mySegmentedControl.selectedSegmentIndex)
     }
     
     
@@ -124,9 +136,9 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         myButton.setTitle(myString, for: .normal)
         myPageControl.currentPage = row
         mySegmentedControl.selectedSegmentIndex = row
+        mySlider.value = Float(row)
 
     }
-    
     
 }
 
