@@ -47,11 +47,16 @@
                                     <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Dy-AW-EjJ"/>
                                 </connections>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="luj-v9-UGb">
+                                <rect key="frame" x="18" y="391" width="357" height="31"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dMT-06-elM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1sl-A9-5M1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="luj-v9-UGb" secondAttribute="trailing" constant="20" id="7fa-7r-IsN"/>
+                            <constraint firstItem="luj-v9-UGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HVV-hU-zeU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zgp-Sz-mcq" secondAttribute="trailing" constant="20" id="HZp-hs-DNr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p7w-dE-wCQ" secondAttribute="trailing" id="Nse-eB-tsb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxV-Zn-Wz4" secondAttribute="trailing" constant="20" id="TTy-sX-DA2"/>
@@ -61,6 +66,7 @@
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcR-w9-5bo"/>
                             <constraint firstItem="hxV-Zn-Wz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hrf-S1-mpc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dMT-06-elM" secondAttribute="trailing" constant="20" id="puw-hK-Psl"/>
+                            <constraint firstItem="luj-v9-UGb" firstAttribute="top" secondItem="dMT-06-elM" secondAttribute="bottom" constant="20" id="sp2-vN-Iau"/>
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="top" secondItem="zgp-Sz-mcq" secondAttribute="bottom" constant="20" id="vhZ-gx-BRa"/>
                             <constraint firstItem="hxV-Zn-Wz4" firstAttribute="top" secondItem="p7w-dE-wCQ" secondAttribute="bottom" constant="20" id="zj2-I8-ZKA"/>
                         </constraints>
@@ -70,6 +76,7 @@
                         <outlet property="myPageControl" destination="hxV-Zn-Wz4" id="zuS-Jc-9Qa"/>
                         <outlet property="myPickerView" destination="p7w-dE-wCQ" id="UiR-U1-7SE"/>
                         <outlet property="mySegmentedControl" destination="dMT-06-elM" id="atl-XV-Bpt"/>
+                        <outlet property="mySlider" destination="luj-v9-UGb" id="kBy-tG-7En"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

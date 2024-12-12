@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var mySlider: UISlider!
     
     
     // variables
@@ -42,6 +43,11 @@ class ViewController: UIViewController {
         for (index, value) in myPickerViewValues.enumerated(){
             mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
         }
+        
+        // sliders
+        mySlider.minimumTrackTintColor = .red
+        mySlider.minimumValue = 0
+        mySlider.maximumValue = Float(myPickerViewValues.count)
        
         
     }
