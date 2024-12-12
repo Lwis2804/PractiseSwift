@@ -51,6 +51,25 @@ class ViewController: UIViewController {
         mySlider.value = 1 
         
     }
+    
+    
+    @IBAction func mySliderAction(_ sender: Any) {
+        switch mySlider.value {
+        case 1..<2:
+            mySegmentedControl.selectedSegmentIndex = 0
+        case 2..<3:
+            mySegmentedControl.selectedSegmentIndex = 1
+        case 3..<4:
+            mySegmentedControl.selectedSegmentIndex = 2
+        case 4..<5:
+            mySegmentedControl.selectedSegmentIndex = 3
+        default:
+            mySegmentedControl.selectedSegmentIndex = 4
+            
+        }
+    }
+    
+    
 
     @IBAction func myButtonAction(_ sender: Any) {
         
