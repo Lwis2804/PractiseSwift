@@ -46,9 +46,9 @@ class ViewController: UIViewController {
         
         // sliders
         mySlider.minimumTrackTintColor = .red
-        mySlider.minimumValue = 0
+        mySlider.minimumValue = 1
         mySlider.maximumValue = Float(myPickerViewValues.count)
-       
+        mySlider.value = 1 
         
     }
 
