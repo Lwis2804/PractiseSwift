@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
-    
+    @IBOutlet weak var myStepper: UIStepper!
     
     // variables
     private let myPickerViewValues = ["Uno","Dos","Tres","Cuatro","Cinco"]
@@ -48,8 +48,11 @@ class ViewController: UIViewController {
         mySlider.minimumTrackTintColor = .red
         mySlider.minimumValue = 1
         mySlider.maximumValue = Float(myPickerViewValues.count)
-        mySlider.value = 1 
+        mySlider.value = 1
         
+        // Stepper
+        myStepper.minimumValue = 0
+        myStepper.maximumValue = Double(myPickerViewValues.count)
     }
     
     

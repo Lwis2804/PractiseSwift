@@ -85,6 +85,7 @@
                         <outlet property="myPickerView" destination="p7w-dE-wCQ" id="UiR-U1-7SE"/>
                         <outlet property="mySegmentedControl" destination="dMT-06-elM" id="atl-XV-Bpt"/>
                         <outlet property="mySlider" destination="luj-v9-UGb" id="kBy-tG-7En"/>
+                        <outlet property="myStepper" destination="X8G-Er-4qw" id="sbr-on-Wbn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
