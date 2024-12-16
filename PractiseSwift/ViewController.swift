@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
+    @IBOutlet weak var mySwitch: UISwitch!
+    
     
     // variables
     private let myPickerViewValues = ["Uno","Dos","Tres","Cuatro","Cinco"]
@@ -53,6 +55,10 @@ class ViewController: UIViewController {
         // Stepper
         myStepper.minimumValue = 0
         myStepper.maximumValue = Double(myPickerViewValues.count)
+        
+        // Stepper
+        mySwitch.onTintColor = .purple
+        mySwitch.isOn = false 
     }
     
     
