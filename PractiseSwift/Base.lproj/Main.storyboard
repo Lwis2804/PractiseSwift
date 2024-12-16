@@ -59,6 +59,9 @@
                                     <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Dy-AW-EjJ"/>
                                 </connections>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ev-or-OC4">
+                                <rect key="frame" x="172" y="493" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,6 +81,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zgp-Sz-mcq" secondAttribute="trailing" constant="20" id="gGB-vS-Smu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxV-Zn-Wz4" secondAttribute="trailing" constant="20" id="iez-yA-Fve"/>
                             <constraint firstItem="zgp-Sz-mcq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kKU-8o-aRU"/>
+                            <constraint firstItem="4ev-or-OC4" firstAttribute="top" secondItem="X8G-Er-4qw" secondAttribute="bottom" constant="20" id="mo6-Vg-djX"/>
+                            <constraint firstItem="4ev-or-OC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJ7-ZD-vru"/>
                             <constraint firstItem="dMT-06-elM" firstAttribute="top" secondItem="hxV-Zn-Wz4" secondAttribute="bottom" constant="20" id="v6C-Tt-V8H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="luj-v9-UGb" secondAttribute="trailing" constant="20" id="z2V-w0-U41"/>
                         </constraints>
