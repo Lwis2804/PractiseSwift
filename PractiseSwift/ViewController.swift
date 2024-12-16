@@ -56,6 +56,12 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func myStepperAction(_ sender: Any) {
+        let value = myStepper.value
+        mySlider.value = Float(value)
+    }
+    
+    
     @IBAction func mySliderAction(_ sender: Any) {
        
         switch mySlider.value {

@@ -45,6 +45,9 @@
                             </slider>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="X8G-Er-4qw">
                                 <rect key="frame" x="149.66666666666666" y="441" width="94" height="32"/>
+                                <connections>
+                                    <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4MO-ZJ-OQX"/>
+                                </connections>
                             </stepper>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dMT-06-elM">
                                 <rect key="frame" x="20" y="340" width="353" height="32"/>
