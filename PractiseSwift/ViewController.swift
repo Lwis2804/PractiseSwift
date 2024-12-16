@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self // ayuda a cargar datos en la vista
         myPickerView.delegate = self // delegado sobre el view controller
+        myPickerView.isHidden = true
         
         // page controls
         myPageControl.numberOfPages = myPickerViewValues.count
@@ -59,6 +60,17 @@ class ViewController: UIViewController {
         // Stepper
         mySwitch.onTintColor = .purple
         mySwitch.isOn = false 
+    }
+    
+    
+    
+    @IBAction func mySwitchAction(_ sender: Any) {
+        
+        if mySwitch.isOn {
+            myPickerView.isHidden = false
+        }else{
+            myPickerView.isHidden = true
+        }
     }
     
     
