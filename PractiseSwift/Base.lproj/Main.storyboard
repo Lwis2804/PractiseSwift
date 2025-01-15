@@ -65,13 +65,11 @@
                                     <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ALY-oR-O0g"/>
                                 </connections>
                             </switch>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DjX-Me-HLH">
-                                <rect key="frame" x="121" y="553" width="150" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DjX-Me-HLH">
+                                <rect key="frame" x="20" y="544" width="353" height="4"/>
                             </progressView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="s3f-Sn-DxG">
-                                <rect key="frame" x="186" y="594" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="s3f-Sn-DxG">
+                                <rect key="frame" x="186.66666666666666" y="204" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -79,13 +77,16 @@
                         <constraints>
                             <constraint firstItem="X8G-Er-4qw" firstAttribute="top" secondItem="luj-v9-UGb" secondAttribute="bottom" constant="20" id="1C7-Tk-bE4"/>
                             <constraint firstItem="luj-v9-UGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Hk-i0-16o"/>
+                            <constraint firstItem="s3f-Sn-DxG" firstAttribute="centerY" secondItem="p7w-dE-wCQ" secondAttribute="centerY" id="AHs-sd-C6P"/>
                             <constraint firstItem="hxV-Zn-Wz4" firstAttribute="top" secondItem="p7w-dE-wCQ" secondAttribute="bottom" constant="20" id="FYl-dM-9P0"/>
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hhk-UY-X6Y"/>
                             <constraint firstItem="hxV-Zn-Wz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JBB-n7-7PK"/>
+                            <constraint firstItem="s3f-Sn-DxG" firstAttribute="centerX" secondItem="p7w-dE-wCQ" secondAttribute="centerX" id="JRf-zK-fLu"/>
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LJx-aZ-WP0"/>
                             <constraint firstItem="luj-v9-UGb" firstAttribute="top" secondItem="dMT-06-elM" secondAttribute="bottom" constant="20" id="LhQ-MC-RYy"/>
                             <constraint firstItem="X8G-Er-4qw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rj1-8w-Uiz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dMT-06-elM" secondAttribute="trailing" constant="20" id="Xcc-so-rFO"/>
+                            <constraint firstItem="DjX-Me-HLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zdm-yU-0JT"/>
                             <constraint firstItem="dMT-06-elM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cqd-VM-ese"/>
                             <constraint firstItem="zgp-Sz-mcq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="f2o-bn-O7y"/>
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="top" secondItem="zgp-Sz-mcq" secondAttribute="bottom" constant="40" id="fhF-vO-bVz"/>
@@ -94,14 +95,18 @@
                             <constraint firstItem="zgp-Sz-mcq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kKU-8o-aRU"/>
                             <constraint firstItem="4ev-or-OC4" firstAttribute="top" secondItem="X8G-Er-4qw" secondAttribute="bottom" constant="20" id="mo6-Vg-djX"/>
                             <constraint firstItem="4ev-or-OC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJ7-ZD-vru"/>
+                            <constraint firstItem="DjX-Me-HLH" firstAttribute="top" secondItem="4ev-or-OC4" secondAttribute="bottom" constant="20" id="sK0-ss-8yU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DjX-Me-HLH" secondAttribute="trailing" constant="20" id="skF-Vg-Yr5"/>
                             <constraint firstItem="dMT-06-elM" firstAttribute="top" secondItem="hxV-Zn-Wz4" secondAttribute="bottom" constant="20" id="v6C-Tt-V8H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="luj-v9-UGb" secondAttribute="trailing" constant="20" id="z2V-w0-U41"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myActivityIndicator" destination="s3f-Sn-DxG" id="tuc-9q-Qbt"/>
                         <outlet property="myButton" destination="zgp-Sz-mcq" id="Yr6-UT-W91"/>
                         <outlet property="myPageControl" destination="hxV-Zn-Wz4" id="zuS-Jc-9Qa"/>
                         <outlet property="myPickerView" destination="p7w-dE-wCQ" id="UiR-U1-7SE"/>
+                        <outlet property="myProgressView" destination="DjX-Me-HLH" id="kPX-NM-D3b"/>
                         <outlet property="mySegmentedControl" destination="dMT-06-elM" id="atl-XV-Bpt"/>
                         <outlet property="mySlider" destination="luj-v9-UGb" id="kBy-tG-7En"/>
                         <outlet property="myStepper" destination="X8G-Er-4qw" id="sbr-on-Wbn"/>

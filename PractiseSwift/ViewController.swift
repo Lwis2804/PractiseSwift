@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
     @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var myProgressView: UIProgressView!
+    @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     
     
     // variables
