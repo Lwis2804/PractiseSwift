@@ -66,6 +66,11 @@ class ViewController: UIViewController {
         // Progress Indicator
         
         myProgressView.progress = 0
+        
+        // activity indicator
+        myActivityIndicator.color = .green
+        myActivityIndicator.startAnimating()
+        myActivityIndicator.hidesWhenStopped = true
     }
     
     
@@ -74,8 +79,11 @@ class ViewController: UIViewController {
         
         if mySwitch.isOn {
             myPickerView.isHidden = false
+            myActivityIndicator.stopAnimating()
+          
         }else{
             myPickerView.isHidden = true
+            myActivityIndicator.startAnimating()
         }
     }
     
