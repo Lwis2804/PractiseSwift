@@ -61,7 +61,11 @@ class ViewController: UIViewController {
         
         // Stepper
         mySwitch.onTintColor = .purple
-        mySwitch.isOn = false 
+        mySwitch.isOn = false
+        
+        // Progress Indicator
+        
+        myProgressView.progress = 0
     }
     
     
@@ -83,29 +87,38 @@ class ViewController: UIViewController {
     
     
     @IBAction func mySliderAction(_ sender: Any) {
+        
+        var progress : Float = 0
        
         switch mySlider.value {
         case 1..<2:
             mySegmentedControl.selectedSegmentIndex = 0
             myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             myButton.setTitle(String(mySlider.value), for: .normal)
+            progress = 0.2
         case 2..<3:
             mySegmentedControl.selectedSegmentIndex = 1
             myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             myButton.setTitle(String(mySlider.value), for: .normal)
+            progress = 0.4
         case 3..<4:
             mySegmentedControl.selectedSegmentIndex = 2
             myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             myButton.setTitle(String(mySlider.value), for: .normal)
+            progress = 0.6
         case 4..<5:
             mySegmentedControl.selectedSegmentIndex = 3
             myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             myButton.setTitle(String(mySlider.value), for: .normal)
+            progress = 0.8
         default:
             mySegmentedControl.selectedSegmentIndex = 4
             myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             myButton.setTitle(String(mySlider.value), for: .normal)
+            progress = 1
         }
+        
+        myProgressView.progress = progress
     }
     
     
