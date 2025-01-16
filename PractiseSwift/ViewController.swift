@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var myProgressView: UIProgressView!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var myStepperLabel: UILabel!
+    @IBOutlet weak var mySwitchLable: UILabel!
     
     
     // variables
@@ -71,6 +73,13 @@ class ViewController: UIViewController {
         myActivityIndicator.color = .green
         myActivityIndicator.startAnimating()
         myActivityIndicator.hidesWhenStopped = true
+        
+        // Labels
+        myStepperLabel.textColor = .darkGray
+        myStepperLabel.font = UIFont.boldSystemFont(ofSize: 26)
+        myStepperLabel.text = "1"
+        
+        mySwitchLable.text = "Esta apagado"
     }
     
     
@@ -80,10 +89,11 @@ class ViewController: UIViewController {
         if mySwitch.isOn {
             myPickerView.isHidden = false
             myActivityIndicator.stopAnimating()
-          
+            mySwitchLable.text = "Esta encendido"
         }else{
             myPickerView.isHidden = true
             myActivityIndicator.startAnimating()
+            mySwitchLable.text = "Esta apagado"
         }
     }
     
@@ -91,6 +101,8 @@ class ViewController: UIViewController {
     @IBAction func myStepperAction(_ sender: Any) {
         let value = myStepper.value
         mySlider.value = Float(value)
+        
+        myStepperLabel.text = "\(value)"
     }
     
     

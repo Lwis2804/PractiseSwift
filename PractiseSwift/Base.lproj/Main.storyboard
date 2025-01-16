@@ -128,7 +128,9 @@
                         <outlet property="mySegmentedControl" destination="dMT-06-elM" id="atl-XV-Bpt"/>
                         <outlet property="mySlider" destination="luj-v9-UGb" id="kBy-tG-7En"/>
                         <outlet property="myStepper" destination="X8G-Er-4qw" id="sbr-on-Wbn"/>
+                        <outlet property="myStepperLabel" destination="Ckx-eR-h8C" id="nIY-QT-NPP"/>
                         <outlet property="mySwitch" destination="4ev-or-OC4" id="vPS-V7-N3e"/>
+                        <outlet property="mySwitchLable" destination="UZB-Ta-8C4" id="X6j-Fp-gBL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
