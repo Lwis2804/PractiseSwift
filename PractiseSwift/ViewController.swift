@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var myStepperLabel: UILabel!
     @IBOutlet weak var mySwitchLable: UILabel!
+    @IBOutlet weak var myTexteField: UITextField!
     
     
     // variables
@@ -80,6 +81,10 @@ class ViewController: UIViewController {
         myStepperLabel.text = "1"
         
         mySwitchLable.text = "Esta apagado"
+        
+        //textField
+        myTexteField.textColor = .brown
+        myTexteField.placeholder = "Escribe algo"
     }
     
     

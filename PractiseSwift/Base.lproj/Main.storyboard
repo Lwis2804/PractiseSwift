@@ -139,6 +139,7 @@
                         <outlet property="myStepperLabel" destination="Ckx-eR-h8C" id="nIY-QT-NPP"/>
                         <outlet property="mySwitch" destination="4ev-or-OC4" id="vPS-V7-N3e"/>
                         <outlet property="mySwitchLable" destination="UZB-Ta-8C4" id="X6j-Fp-gBL"/>
+                        <outlet property="myTexteField" destination="5UT-DF-tqo" id="3mV-eM-uI0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
