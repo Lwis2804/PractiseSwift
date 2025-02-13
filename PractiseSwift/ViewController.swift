@@ -85,6 +85,7 @@ class ViewController: UIViewController {
         //textField
         myTexteField.textColor = .brown
         myTexteField.placeholder = "Escribe algo"
+        myTexteField.delegate = self
     }
     
     
@@ -209,3 +210,12 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
 }
 
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        myButton.setTitle(myTexteField.text, for: .normal)
+    }
+}
