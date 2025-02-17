@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myStepperLabel: UILabel!
     @IBOutlet weak var mySwitchLable: UILabel!
     @IBOutlet weak var myTexteField: UITextField!
+    @IBOutlet weak var myTextView: UITextView!
     
     
     // variables
@@ -50,6 +51,9 @@ class ViewController: UIViewController {
         mySegmentedControl.removeAllSegments()
         for (index, value) in myPickerViewValues.enumerated(){
             mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
+            //textView
+            myTextView.textColor = .brown
+            myTextView.isEditable = false
         }
         
         // sliders
