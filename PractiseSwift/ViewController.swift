@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
             //textView
             myTextView.textColor = .brown
-            myTextView.isEditable = false
+            myTextView.delegate = self
         }
         
         // sliders
@@ -160,6 +160,7 @@ class ViewController: UIViewController {
         } else {
             myButton.backgroundColor = .blue
         }
+        myTextView.resignFirstResponder()
     }
     
     
@@ -221,5 +222,15 @@ extension ViewController : UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         myButton.setTitle(myTexteField.text, for: .normal)
+    }
+}
+
+extension ViewController : UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        myTexteField.isHidden = true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        myTexteField.isHidden = false
     }
 }

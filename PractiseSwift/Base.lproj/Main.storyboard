@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-Sz-mcq">
-                                <rect key="frame" x="20" y="323" width="353" height="35"/>
+                                <rect key="frame" x="20" y="333" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -26,31 +26,31 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7w-dE-wCQ">
-                                <rect key="frame" x="0.0" y="398" width="393" height="120"/>
+                                <rect key="frame" x="0.0" y="408" width="393" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Frh-ir-XdQ"/>
                                 </constraints>
                             </pickerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hxV-Zn-Wz4">
-                                <rect key="frame" x="20" y="538" width="353" height="26"/>
+                                <rect key="frame" x="20" y="548" width="353" height="26"/>
                                 <connections>
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="AQz-TU-ua9"/>
                                 </connections>
                             </pageControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="luj-v9-UGb">
-                                <rect key="frame" x="18" y="635" width="357" height="31"/>
+                                <rect key="frame" x="18" y="645" width="357" height="31"/>
                                 <connections>
                                     <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="xGi-29-Mcg"/>
                                 </connections>
                             </slider>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="X8G-Er-4qw">
-                                <rect key="frame" x="149.66666666666666" y="685" width="94" height="32"/>
+                                <rect key="frame" x="149.66666666666666" y="695" width="94" height="32"/>
                                 <connections>
                                     <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4MO-ZJ-OQX"/>
                                 </connections>
                             </stepper>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dMT-06-elM">
-                                <rect key="frame" x="20" y="584" width="353" height="32"/>
+                                <rect key="frame" x="20" y="594" width="353" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -60,25 +60,25 @@
                                 </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ev-or-OC4">
-                                <rect key="frame" x="172" y="737" width="51" height="31"/>
+                                <rect key="frame" x="172" y="747" width="51" height="31"/>
                                 <connections>
                                     <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ALY-oR-O0g"/>
                                 </connections>
                             </switch>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DjX-Me-HLH">
-                                <rect key="frame" x="20" y="788" width="353" height="4"/>
+                                <rect key="frame" x="20" y="798" width="353" height="4"/>
                             </progressView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="s3f-Sn-DxG">
-                                <rect key="frame" x="186.66666666666666" y="448" width="20" height="20"/>
+                                <rect key="frame" x="186.66666666666666" y="458" width="20" height="20"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckx-eR-h8C">
-                                <rect key="frame" x="263.66666666666669" y="690.66666666666663" width="109.33333333333331" height="21"/>
+                                <rect key="frame" x="263.66666666666669" y="700.66666666666663" width="109.33333333333331" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZB-Ta-8C4">
-                                <rect key="frame" x="241" y="742" width="132" height="21"/>
+                                <rect key="frame" x="241" y="752" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -121,7 +121,7 @@
                             <constraint firstItem="luj-v9-UGb" firstAttribute="top" secondItem="dMT-06-elM" secondAttribute="bottom" constant="20" id="LhQ-MC-RYy"/>
                             <constraint firstItem="UZB-Ta-8C4" firstAttribute="centerY" secondItem="4ev-or-OC4" secondAttribute="centerY" id="PZ7-bO-LFk"/>
                             <constraint firstItem="X8G-Er-4qw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rj1-8w-Uiz"/>
-                            <constraint firstItem="zgp-Sz-mcq" firstAttribute="top" secondItem="Sxg-iN-ju2" secondAttribute="bottom" constant="20" id="S1X-Yu-WgX"/>
+                            <constraint firstItem="zgp-Sz-mcq" firstAttribute="top" secondItem="Sxg-iN-ju2" secondAttribute="bottom" constant="30" id="S1X-Yu-WgX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dMT-06-elM" secondAttribute="trailing" constant="20" id="Xcc-so-rFO"/>
                             <constraint firstItem="DjX-Me-HLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zdm-yU-0JT"/>
                             <constraint firstItem="dMT-06-elM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cqd-VM-ese"/>
