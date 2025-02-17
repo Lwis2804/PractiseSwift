@@ -88,6 +88,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sxg-iN-ju2">
+                                <rect key="frame" x="20" y="153" width="353" height="86"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -96,6 +104,8 @@
                             <constraint firstItem="luj-v9-UGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Hk-i0-16o"/>
                             <constraint firstItem="5UT-DF-tqo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7qc-E5-S05"/>
                             <constraint firstItem="s3f-Sn-DxG" firstAttribute="centerY" secondItem="p7w-dE-wCQ" secondAttribute="centerY" id="AHs-sd-C6P"/>
+                            <constraint firstItem="Sxg-iN-ju2" firstAttribute="top" secondItem="5UT-DF-tqo" secondAttribute="bottom" constant="20" id="Cyc-K9-o9L"/>
+                            <constraint firstItem="Sxg-iN-ju2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DHW-Bt-St4"/>
                             <constraint firstItem="hxV-Zn-Wz4" firstAttribute="top" secondItem="p7w-dE-wCQ" secondAttribute="bottom" constant="20" id="FYl-dM-9P0"/>
                             <constraint firstItem="Ckx-eR-h8C" firstAttribute="centerY" secondItem="X8G-Er-4qw" secondAttribute="centerY" id="GX1-fw-RJk"/>
                             <constraint firstItem="p7w-dE-wCQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hhk-UY-X6Y"/>
@@ -108,6 +118,7 @@
                             <constraint firstItem="luj-v9-UGb" firstAttribute="top" secondItem="dMT-06-elM" secondAttribute="bottom" constant="20" id="LhQ-MC-RYy"/>
                             <constraint firstItem="UZB-Ta-8C4" firstAttribute="centerY" secondItem="4ev-or-OC4" secondAttribute="centerY" id="PZ7-bO-LFk"/>
                             <constraint firstItem="X8G-Er-4qw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rj1-8w-Uiz"/>
+                            <constraint firstItem="zgp-Sz-mcq" firstAttribute="top" secondItem="Sxg-iN-ju2" secondAttribute="bottom" constant="20" id="S1X-Yu-WgX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dMT-06-elM" secondAttribute="trailing" constant="20" id="Xcc-so-rFO"/>
                             <constraint firstItem="DjX-Me-HLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zdm-yU-0JT"/>
                             <constraint firstItem="dMT-06-elM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cqd-VM-ese"/>
@@ -118,6 +129,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zgp-Sz-mcq" secondAttribute="trailing" constant="20" id="gGB-vS-Smu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxV-Zn-Wz4" secondAttribute="trailing" constant="20" id="iez-yA-Fve"/>
                             <constraint firstItem="zgp-Sz-mcq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="kKU-8o-aRU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sxg-iN-ju2" secondAttribute="trailing" constant="20" id="kl4-cS-EiR"/>
                             <constraint firstItem="4ev-or-OC4" firstAttribute="top" secondItem="X8G-Er-4qw" secondAttribute="bottom" constant="20" id="mo6-Vg-djX"/>
                             <constraint firstItem="4ev-or-OC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJ7-ZD-vru"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5UT-DF-tqo" secondAttribute="trailing" constant="20" id="qwy-45-mkg"/>
@@ -148,6 +160,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
